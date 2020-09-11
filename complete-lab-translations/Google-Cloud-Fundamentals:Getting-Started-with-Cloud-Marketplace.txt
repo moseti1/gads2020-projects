@@ -1,0 +1,45 @@
+Locate open Google Cloud Fundamentals: Getting Started with Cloud Marketplace 
+Enter the provided lab credentials to login 
+Launch the commandlin by clicking the cmd icon
+
+
+Set Zone and Project_id using:
+    gcloud config set project [PROJECT_ID]
+    gcloud config set compute/zone [ZONE]
+
+Create mysql-instance:
+    gcloud compute instances create mysql-test
+
+connect too ssh: 
+    gcloud compute ssh mysql-test
+
+
+install apache and apache and php:
+    sudo apt-get update
+    sudo apt-get install apache2 php libapache2-mod-php
+
+
+Update and install mysqlserver:
+    sudo apt-get update 
+    sudo apt-get install mysql-server php-mysql php-pear
+
+
+
+
+Click on vm-instances page and copy the External IP adress
+    http://External_IP_Address
+    
+
+In cloud change dir to:
+  cd /opt/bitnami
+
+
+To copy the phpinfo.php script from the installation directory to a publicly accessible location under the web server document root
+    sudo sh -c 'echo "<?php phpinfo(); ?>" > apache2/htdocs/phpinfo.php'
+    exit 
+
+Open new Browser tab using site adress external address to the required 
+    http://SITE_ADDRESS/phpinfo.php
+
+
+
